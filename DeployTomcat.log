@@ -1,0 +1,30 @@
+BUILD.log
+
+Sistem :
+
+Java : 
+
+openjdk 9-Ubuntu
+OpenJDK Runtime Environment (build 9-Ubuntu+0-9b161-1)
+OpenJDK 64-Bit Server VM (build 9-Ubuntu+0-9b161-1, mixed mode)
+
+Apache Tomcat/7.0.77 : Tanpa SSL
+
+
+=====
+
+Ketika diakses error :
+
+Whitelabel Error Page
+
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Sat May 13 18:28:21 WIB 2017
+There was an unexpected error (type=Not Found, status=404).
+No message available
+
+Jawaban :
+
+Fineract-provider has only APIs, if you want user interface then install https://github.com/openmf/community-app and connect to your local APIs.
+
+https://groups.google.com/forum/#!topic/mifosdeveloper/0vYFtXmhlUs
