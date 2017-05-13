@@ -1,0 +1,20 @@
+BUILD.log
+
+./gradlew build war
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':licenseMain'.
+> License violations were found: /home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/spring/ehcache.xml,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/persistence.xml,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/application.properties,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/orm.xml,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/spring/jndi.xml,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/spring/cache.xml,/home/wildan/jobstuff/openthinklabs/eksperimen/incubator-fineract/fineract-provider/src/main/resources/META-INF/spring/infrastructure.xml}
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+
+Solusi : 
+
+./gradlew tasks licenseFormatMain licenseFormatTest licenseFormatIntegrationTest
